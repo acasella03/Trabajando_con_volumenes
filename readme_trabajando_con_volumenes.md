@@ -31,3 +31,14 @@ Utiliza -v "$PWD"/htdocs:/usr/local/apache2/htdocs/
 http://localhost:9080<br>
 http://localhost:8000
 11.  Tienen que salir la misma página web
+
+## Respuesta:
+### 1 y 2.
+- [x] Descarga la imagen 'httpd' y comprueba que está en tu equipo.
+- [x] Crea un contenedor con el nombre 'dam_httpd'.
+```
+Comando:
+            $ docker run -dit --name dam_httpd -p 8080:80 httpd:2.4
+```
+> [!NOTE]
+> Este comando ejecuta un contenedor Docker basado en la imagen oficial de Apache HTTP Server versión 2.4. El contenedor se ejecuta en segundo plano, se llama "dam_apache-app", y el puerto 8080 del sistema host se redirige al puerto 80 del contenedor, lo que permite acceder al servidor web Apache dentro del contenedor desde el sistema host a través del puerto 8080.
