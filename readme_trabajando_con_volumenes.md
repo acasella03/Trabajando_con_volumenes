@@ -67,5 +67,5 @@ Comando:
 ```
 > [!NOTE]
 > El comando crea un nuevo contenedor Docker a partir de la imagen httpd que ejecuta un servidor web Apache. El contenedor se ejecuta en segundo plano, se llama "dam_web1" y se realiza un mapeo de puertos para permitir que el puerto 8080 de mi máquina local se comunique con el puerto 80 del contenedor. Esto permite acceder al servidor web Apache en el contenedor desde tu navegador web en tu máquina local utilizando la dirección http://localhost:8080.
-> 
+
 > [!IMPORTANT] Si ya tengo un contenedor debo eliminarlo para poder ejecutar éste comando con su mapeo y con la versión 2.4. 
