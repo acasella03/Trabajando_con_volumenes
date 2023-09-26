@@ -38,3 +38,12 @@ Comando:
 ```
 > [!NOTE]
 > Este comando descargará la última versión de la imagen 'httpd' desde el registro público de Docker y la almacenará en tu sistema local.
+
+### 2.
+- [x] Crea un contenedor con el nombre 'dam_web1'.
+```
+Comando:
+            $ docker run -d --name dam_web1 httpd
+```
+> [!NOTE]
+>Una vez ejecutado este comando, se creará un nuevo contenedor llamado 'dam_web1' basado en la imagen 'httpd'. Este contenedor ejecutará el servidor web Apache contenido en la imagen y estará en segundo plano. Puedes acceder al servidor web dentro del contenedor a través del puerto 80 del contenedor.
