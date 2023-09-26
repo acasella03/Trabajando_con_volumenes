@@ -28,3 +28,13 @@ Utilizaremos la imagen de Apache. Usa Visual Studio Code y Docker junto con esta
     - http://localhost:9080 
     - http://localhost:8000
 8. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
+
+## Respuesta:
+### 1.
+- [x] Descarga la imagen 'httpd' y comprueba que está en tu equipo.
+```
+Comando:
+            $ docker pull httpd
+```
+> [!NOTE]
+> Este comando descargará la última versión de la imagen 'httpd' desde el registro público de Docker y la almacenará en tu sistema local.
