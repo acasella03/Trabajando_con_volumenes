@@ -55,4 +55,17 @@ Comando:
             $ docker run -d --name dam_web1 -p 8080:80 httpd:2.4
 ```
 > [!NOTE]
->Para poder acceder al servidor web Apache que se encuentra dentro del contenedor 'dam_web1' desde el navegador de mi equipo, debo realizar un mapeo de puertos para redirigir el tráfico desde un puerto en mi máquina local al puerto 80 del contenedor. Por lo que si ya tengo un contenedor debo eliminarlo para poder ejecutar éste comando con su mapeo y con la versión 2.4.
+>Para poder acceder al servidor web Apache que se encuentra dentro del contenedor 'dam_web1' desde el navegador de mi equipo, debo realizar un mapeo de puertos para redirigir el tráfico desde un puerto en mi máquina local al puerto 80 del contenedor. Esto permite acceder al servidor web Apache en el contenedor desde el navegador web en mi máquina local utilizando la dirección http://localhost:8080. 
+> [!IMPORTANT] Si ya tengo un contenedor debo eliminarlo para poder ejecutar éste comando con su mapeo y con la versión 2.4. 
+
+### 4.
+- [x] Utiliza bind mount para que el directorio del apache2 'htdocs' este montado un directorio que tu elijas.
+    - Utiliza -v "$PWD"/htdocs:/usr/local/apache2/htdocs/
+```
+Comando:
+            $ docker run -dit --name dam_web1 -p 8080:80 -v /home/dam2/Documentos/Apache/htdocs:/usr/local/apache2/htdocs/ httpd:2.4
+```
+> [!NOTE]
+> El comando crea un nuevo contenedor Docker a partir de la imagen httpd que ejecuta un servidor web Apache. El contenedor se ejecuta en segundo plano, se llama "dam_web1" y se realiza un mapeo de puertos para permitir que el puerto 8080 de mi máquina local se comunique con el puerto 80 del contenedor. Esto permite acceder al servidor web Apache en el contenedor desde tu navegador web en tu máquina local utilizando la dirección http://localhost:8080.
+> 
+> [!IMPORTANT] Si ya tengo un contenedor debo eliminarlo para poder ejecutar éste comando con su mapeo y con la versión 2.4. 
