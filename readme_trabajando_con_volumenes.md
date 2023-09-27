@@ -88,3 +88,13 @@ Comando:
 
 ![imagen1](https://github.com/acasella03/Trabajando_con_volumenes/blob/main/images/localhost_9080.png)
 ![imagen2](https://github.com/acasella03/Trabajando_con_volumenes/blob/main/images/localhost_8080.png)
+
+### 8.
+- [x] Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
+
+Colocando el el buscador web:
+
+        http://10.0.9.17:9080/
+        http://10.0.9.17:8080/
+
+Veo que efectivamente se realizan los cambio en ambos servidores.
