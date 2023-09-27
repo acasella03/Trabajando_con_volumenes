@@ -73,3 +73,18 @@ Comando:
 
 > [!IMPORTANT] 
 > Si ya tengo un contenedor debo eliminarlo para poder ejecutar éste comando con su mapeo y con la versión 2.4. 
+
+### 6 y 7.
+- [x] Crea otro contenedor 'dam_web2' con el mismo volumen y a otro puerto, por ejemplo 9080.
+- [x]  Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador:
+    - http://localhost:9080 
+    - http://localhost:8080
+```
+Comando:
+            $ docker run -dit --name dam_web2 -p 9080:80 -v /home/dam2/Documentos/Apache/htdocs:/usr/local/apache2/htdocs/ httpd:2.4
+```
+> [!IMPORTANT]
+> Efectivamente en cada servidor funciona el mismo mensaje en el navegador cuando se hacen las dos consultas
+
+![imagen1]()
+![imagen2]()
