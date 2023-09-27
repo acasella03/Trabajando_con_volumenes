@@ -86,5 +86,5 @@ Comando:
 > [!IMPORTANT]
 > Efectivamente en cada servidor funciona el mismo mensaje en el navegador cuando se hacen las dos consultas
 
-![imagen1]()
-![imagen2]()
+![imagen1](https://github.com/acasella03/Trabajando_con_volumenes/blob/main/images/localhost_9080.png)
+![imagen2](https://github.com/acasella03/Trabajando_con_volumenes/blob/main/images/localhost_8080.png)
